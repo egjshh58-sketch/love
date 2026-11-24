@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap');
+:root { --pink:#ff4f87; --deep:#c92d68; --ink:#442638; }
+* { box-sizing:border-box; }
+body {
+  margin:0; min-height:100vh; font-family:'Nunito',sans-serif; color:var(--ink);
+  background: radial-gradient(circle at top left,#ffe0ec 0,transparent 38%),
+              linear-gradient(135deg,#fff8fb,#ffeaf2 55%,#fff4f7);
+  padding:36px 16px; overflow-x:hidden;
+}
+.hearts { text-align:center; color:#f58aaa; letter-spacing:8px; font-size:22px; opacity:.8; }
+.container { width:min(680px,100%); margin:0 auto; }
+.intro { text-align:center; padding:18px 10px 24px; }
+.eyebrow { color:var(--deep); font-size:12px; font-weight:900; letter-spacing:3px; }
+h1 { font-size:clamp(30px,6vw,46px); margin:14px 0 8px; line-height:1.15; }
+h1 span { display:inline-block; animation:beat 1.2s infinite; }
+.lead { font-size:17px; margin:0 auto 16px; color:#80566a; }
+.note { display:inline-block; background:#fff; border:1px solid #ffd0df; border-radius:30px; padding:9px 17px; font-size:13px; }
+.form-card,.gift {
+  background:rgba(255,255,255,.9); border:1px solid #ffcfdf; border-radius:25px;
+  padding:clamp(22px,5vw,36px); box-shadow:0 18px 50px rgba(173,65,107,.12);
+}
+h2 { margin:0 0 8px; font-size:25px; }
+.muted { margin:0 0 24px; color:#987184; }
+form { display:flex; flex-direction:column; gap:10px; }
+label { font-weight:800; margin-top:9px; font-size:14px; }
+input,select,textarea {
+  width:100%; border:1.5px solid #f4c5d5; border-radius:13px; padding:14px 15px;
+  font:inherit; color:var(--ink); background:#fffafd; outline:none; transition:.2s;
+}
+input:focus,select:focus,textarea:focus { border-color:var(--pink); box-shadow:0 0 0 3px #ff4f871a; }
+textarea { resize:vertical; }
+button {
+  margin-top:15px; border:0; border-radius:14px; padding:15px 20px; color:white;
+  font:900 16px 'Nunito',sans-serif; cursor:pointer;
+  background:linear-gradient(100deg,#ff6397,#d93678); box-shadow:0 9px 20px #e94a8333;
+  transition:transform .2s,filter .2s;
+}
+button:hover { transform:translateY(-2px); filter:brightness(1.04); }
+button:disabled { opacity:.65; cursor:wait; transform:none; }
+.privacy { text-align:center; color:#a18493; font-size:11px; line-height:1.5; margin:5px 0 0; }
+.gift { margin-top:25px; text-align:center; animation:appear .7s ease both; }
+.gift-badge { display:inline-block; color:#c52e68; background:#ffe5ef; border-radius:30px; padding:7px 14px; font-size:11px; font-weight:900; letter-spacing:2px; margin-bottom:14px; }
+.gift h2 { color:#c52e68; font-size:clamp(24px,5vw,34px); }
+.gift p { color:#80566a; }
+.gift img { display:block; width:100%; height:auto; border-radius:14px; margin:18px auto; }
+.bottom-line { font-weight:800; font-size:17px; }
+.hidden { display:none; }
+footer { text-align:center; color:#b58b9e; font-size:12px; padding:25px 0 5px; }
+@keyframes beat { 0%,100%{transform:scale(1)} 50%{transform:scale(1.18)} }
+@keyframes appear { from{opacity:0;transform:translateY(18px)} to{opacity:1;transform:translateY(0)} }
+@media(max-width:480px) { body{padding:20px 12px} .form-card,.gift{border-radius:19px} }

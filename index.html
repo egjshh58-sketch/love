@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff0f5">
+  <title>Siz uchun kichik sovg‘a 💗</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="hearts" aria-hidden="true">💗　💕　💖　♡　💗</div>
+  <main class="container">
+    <section class="intro">
+      <div class="eyebrow">♡ KICHKINA SIRLI SAHIFA ♡</div>
+      <h1>Salom, go‘zal inson! <span>💗</span></h1>
+      <p class="lead">Siz uchun kichik bir savolim va yoqimli syurprizim bor...</p>
+      <div class="note">Iltimos, savollarga chin dildan javob bering 😊</div>
+    </section>
+
+    <section class="form-card" id="formCard">
+      <h2>Avval tanishib olaylik ✨</h2>
+      <p class="muted">Quyidagi savollarni to‘ldiring:</p>
+      <form id="loveForm">
+        <label for="visitorName">1. Ismingiz nima?</label>
+        <input id="visitorName" name="Ismi" type="text" placeholder="Ismingizni yozing..." required>
+
+        <label for="senderName">2. Bu saytni sizga kim yubordi?</label>
+        <input id="senderName" name="Saytni yuborgan inson" type="text" placeholder="Uning ismi..." required>
+
+        <label for="relationship">3. U inson sizga yoqadimi?</label>
+        <select id="relationship" name="U inson sizga yoqadimi" required>
+          <option value="" disabled selected>Javobingizni tanlang</option>
+          <option>Ha, albatta 💗</option>
+          <option>O‘rtacha 😊</option>
+          <option>Hali bilmayman 🙈</option>
+          <option>Yo‘q</option>
+        </select>
+
+        <label for="message">4. Unga aytmoqchi bo‘lgan gapingiz bormi? (ixtiyoriy)</label>
+        <textarea id="message" name="Xabar" rows="3" placeholder="Bu yerga yozishingiz mumkin..."></textarea>
+
+        <button type="submit" id="submitBtn">Javoblarni yuborish 💌</button>
+        <p class="privacy">Javoblaringiz sayt egasiga yuboriladi. Emailga yuborish Formspree sozlangandan keyin ishlaydi.</p>
+      </form>
+    </section>
+
+    <section class="gift hidden" id="gift">
+      <div class="gift-badge">SIZ UCHUN MAXSUS</div>
+      <h2 id="giftTitle">Sizga kichkina sovg‘a bor! 🎁</h2>
+      <p id="giftText">Bu shirin sovg‘a sizga tabassum ulashsin 💕</p>
+      <img src="assets/kinder-sovga.png" alt="Kinder Chocolate sovg‘asi">
+      <p class="bottom-line">Har doim yuzingizdan tabassum arimasin! 💗</p>
+    </section>
+    <footer>Made with love ♡</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
